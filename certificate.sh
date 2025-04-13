@@ -34,7 +34,8 @@ mkdir /root/.acme.sh
 mkdir /etc/ilyass
 rm /etc/ilyass/ilyass.crt
 rm /etc/ilyass/ilyass.key
-curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
+#curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
+curl https://raw.githubusercontent.com/acmesh-official/acme.sh/refs/heads/master/acme.sh -o /root/.acme.sh/acme.sh
 chmod +x /root/.acme.sh/acme.sh
 /root/.acme.sh/acme.sh --upgrade --auto-upgrade
 /root/.acme.sh/acme.sh --set-default-ca --server letsencrypt
