@@ -41,8 +41,8 @@ chmod +x /root/.acme.sh/acme.sh
 /root/.acme.sh/acme.sh --issue -d $domain --standalone -k ec-256
 ~/.acme.sh/acme.sh --installcert -d $domain --fullchainpath /etc/ilyass/ilyass.crt --keypath /etc/ilyass/ilyass.key --ecc
 }
-scoat >
-certificate >
+scoat
+certificate
 echo -e "${BIPurple}   Certificate Path: ${BIWhite}/etc/ilyass/ilyass.crt"
 echo -e "${BIPurple}   Key Path        : ${BIWhite}/etc/ilyass/ilyass.key"
 
